@@ -1,0 +1,514 @@
+/* ===========================
+   GLOBAL
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#F8FAFC;
+    color:#0F172A;
+    line-height:1.7;
+}
+
+section{
+    padding:100px 0;
+}
+
+.container{
+    max-width:1200px;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar{
+    background:#ffffff !important;
+    padding:18px 0;
+    border-bottom:1px solid #E2E8F0;
+    transition:.3s;
+}
+
+.navbar-brand{
+    font-size:24px;
+    font-weight:700;
+    color:#0F172A !important;
+}
+
+.nav-link{
+    color:#475569 !important;
+    font-weight:500;
+    margin-left:20px;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#2563EB !important;
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.btn{
+    border-radius:14px;
+    padding:14px 28px;
+    font-weight:600;
+    transition:.35s;
+}
+
+.btn-primary{
+
+    background:#2563EB;
+    border:none;
+
+}
+
+.btn-primary:hover{
+
+    background:#1D4ED8;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 15px 35px rgba(37,99,235,.25);
+
+}
+
+.btn-outline-dark{
+
+    border-radius:14px;
+
+}
+
+.btn-outline-dark:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+
+    padding-top:170px;
+
+    padding-bottom:120px;
+
+}
+
+.hero h1{
+
+    font-size:62px;
+
+    font-weight:800;
+
+    line-height:1.1;
+
+    margin-bottom:25px;
+
+    letter-spacing:-2px;
+
+}
+
+.hero-text{
+
+    font-size:20px;
+
+    color:#64748B;
+
+    margin-bottom:35px;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+/* ===========================
+   DASHBOARD
+=========================== */
+
+.dashboard{
+
+    background:#fff;
+
+    border-radius:25px;
+
+    padding:35px;
+
+    box-shadow:
+    0 25px 60px rgba(15,23,42,.08);
+
+    border:1px solid #E2E8F0;
+
+}
+
+.dashboard-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:30px;
+
+}
+
+.dashboard-header h5{
+
+    margin:0;
+
+    font-weight:700;
+
+}
+
+.dashboard-header small{
+
+    color:#64748B;
+
+}
+
+.dashboard-header i{
+
+    font-size:32px;
+
+    color:#2563EB;
+
+}
+
+.metric{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 0;
+
+    border-bottom:1px solid #EEF2F7;
+
+}
+
+.metric:last-child{
+
+    border-bottom:none;
+
+}
+
+.metric strong{
+
+    color:#2563EB;
+
+    font-size:20px;
+
+}
+
+/* ===========================
+   KPI CARDS
+=========================== */
+
+.stat-card{
+
+    background:#fff;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    margin-top:20px;
+
+    border:1px solid #E2E8F0;
+
+    transition:.35s;
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 45px rgba(15,23,42,.08);
+
+}
+
+.stat-card h3{
+
+    font-size:34px;
+
+    font-weight:800;
+
+    color:#2563EB;
+
+}
+
+.stat-card p{
+
+    color:#64748B;
+
+    margin:0;
+
+}
+
+/* ===========================
+   SECTION TITLES
+=========================== */
+
+.section-title{
+
+    margin-bottom:60px;
+
+}
+
+.section-title span{
+
+    color:#2563EB;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    font-size:14px;
+
+}
+
+.section-title h2{
+
+    font-size:46px;
+
+    font-weight:800;
+
+    margin-top:10px;
+
+}
+
+.section-title p{
+
+    color:#64748B;
+
+    max-width:700px;
+
+    margin:auto;
+
+    margin-top:20px;
+
+}
+
+/* ===========================
+   ABOUT
+=========================== */
+
+.skill-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    height:100%;
+
+    transition:.35s;
+
+    border:1px solid #E2E8F0;
+
+}
+
+.skill-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 40px rgba(15,23,42,.07);
+
+}
+
+.skill-card i{
+
+    font-size:35px;
+
+    color:#2563EB;
+
+    margin-bottom:20px;
+
+}
+
+.skill-card h5{
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+}
+
+.skill-card p{
+
+    color:#64748B;
+
+    margin:0;
+
+}
+/* WHY ME */
+
+.benefit-card{
+
+background:#fff;
+padding:35px;
+border-radius:18px;
+text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,.05);
+transition:.3s;
+
+}
+
+.benefit-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.benefit-icon{
+
+font-size:45px;
+margin-bottom:20px;
+
+}
+/* CONTACT */
+
+.contact-card{
+
+background:#fff;
+padding:40px;
+border-radius:18px;
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.contact-box{
+
+background:#f8f9fa;
+padding:40px;
+border-radius:18px;
+height:100%;
+
+}
+
+.contact-item{
+
+margin-bottom:25px;
+
+}
+
+.contact-item h5{
+
+margin-bottom:8px;
+
+}
+
+.contact-item a{
+
+text-decoration:none;
+
+}
+/* =========================== TOOLS =========================== */ .tool-card{ background:#fff; border-radius:20px; padding:30px; text-align:center; border:1px solid #E2E8F0; transition:.35s; height:100%; } .tool-card:hover{ transform:translateY(-8px); box-shadow:0 20px 45px rgba(15,23,42,.08); } .tool-card i{ font-size:36px; color:#2563EB; margin-bottom:18px; } /* =========================== PROCESS =========================== */ .process-card{ background:#fff; border-radius:22px; padding:35px 30px; text-align:center; border:1px solid #E2E8F0; transition:.35s; height:100%; } .process-card:hover{ transform:translateY(-8px); box-shadow:0 20px 45px rgba(15,23,42,.08); } .process-number{ width:56px; height:56px; background:#2563EB; color:#fff; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; margin:0 auto 20px; } /* =========================== CONTACT =========================== */ .contact-card{ background:#fff; padding:40px; border-radius:24px; border:1px solid #E2E8F0; box-shadow:0 20px 50px rgba(15,23,42,.08); } .contact-box{ background:#F8FAFC; padding:40px; border-radius:24px; border:1px solid #E2E8F0; } .contact-item{ margin-bottom:24px; } .contact-item h5{ margin-bottom:8px; font-weight:700; } .contact-item a{ color:#2563EB; text-decoration:none; } .contact-item a:hover{ text-decoration:underline; } /* =========================== FOOTER =========================== */ .footer{ background:#0F172A; color:#CBD5E1; padding:50px 0; } .footer h4{ color:#fff; font-weight:700; } .footer a{ color:#93C5FD; text-decoration:none; transition:.3s; } .footer a:hover{ color:#fff; }
+/* ===========================
+   PHOTOS
+=========================== */
+
+.hero-photo {
+    .hero {
+    padding: 100px 0 70px;
+    min-height: auto;
+}
+    width: 100%;
+    max-width: 380px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 28px;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* HERO LAYOUT */
+.hero .row {
+    align-items: right;
+}
+
+.hero .col-lg-6:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+/* CAMPAIGN PERFORMANCE CARD */
+.campaign-card {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 2rem;
+    margin-top: 2rem;
+    min-height: 320px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.about-photo {
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border-radius: 24px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+    display: block;
+    margin: 0 auto;
+}
+
+.case-study-image img{
+    width:100%;
+    max-width:980px;
+    border:1px solid #E2E8F0;
+    background:#fff;
+    padding:10px;
+}
+/* CASE STUDY */
+.case-study-image img {
+    width: 100%;
+    max-width: 950px;
+    border: 1px solid #E2E8F0;
+    background: #fff;
+    padding: 10px;
+}
+
+.result-summary {
+    background: #F8FAFC;
+    border-radius: 20px;
+    padding: 30px;
+    border: 1px solid #E2E8F0;
+}
+.case-study-image img {
+    width: 100%;
+    max-width: 950px;
+    border-radius: 24px;
+    border: 1px solid #E2E8F0;
+    background: #ffffff;
+    padding: 10px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
