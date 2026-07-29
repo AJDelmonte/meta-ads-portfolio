@@ -38,30 +38,6 @@
 </head>
 
 <body>
-    
-    <!-- SCROLL TO TOP BUTTON -->
-<button id="scrollTopBtn" title="Go to top">
-    ↑
-</button>
-
-<script>
-const scrollTopBtn = document.getElementById("scrollTopBtn");
-
-window.onscroll = function () {
-    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-        scrollTopBtn.style.display = "flex";
-    } else {
-        scrollTopBtn.style.display = "none";
-    }
-};
-
-scrollTopBtn.addEventListener("click", function () {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
-});
-</script>
 
     <!-- ========================= -->
     <!-- NAVIGATION -->
@@ -607,63 +583,90 @@ Clear weekly and monthly reports with actionable recommendations.
     </div>
 </section>
 <!-- CONTACT -->
-
-<!-- =========================
-     PREMIUM FOOTER
-========================= -->
-<footer class="footer">
-
+ 
+<section id="contact" class="section-light">
     <div class="container">
 
-        <div class="row align-items-center g-4">
-
-            <div class="col-lg-6 text-center text-lg-start">
-
-                <h4 class="footer-logo">Alelie Del Monte</h4>
-
-                <p class="footer-tagline">
-                    Meta Ads Strategist • Helping businesses grow through data-driven Facebook and Instagram advertising.
-                </p>
-
-            </div>
-
-            <div class="col-lg-6 text-center text-lg-end">
-
-                <div class="footer-socials">
-
-                    <a href="https://www.linkedin.com/in/alelie-del-monte-646269393/"
-                       target="_blank"
-                       aria-label="LinkedIn">
-                        <i class="bi bi-linkedin"></i>
-                    </a>
-
-                    <a href="mailto:aleliedelmonte0824@gmail.com"
-                       aria-label="Email">
-                        <i class="bi bi-envelope-fill"></i>
-                    </a>
-
-                    <a href="https://resume.io/r/9rG4ykH4T"
-                       target="_blank"
-                       aria-label="Resume">
-                        <i class="bi bi-file-earmark-person-fill"></i>
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <hr class="footer-divider">
-
-        <div class="text-center footer-bottom">
-
-            <p class="mb-0">
-                © 2026 <strong>Alelie Del Monte</strong>. All Rights Reserved.
+        <div class="section-title text-center">
+            <span>GET IN TOUCH</span>
+            <h2>Let's Grow Your Business Together</h2>
+            <p>
+                Whether you're looking for a Meta Ads Strategist, a detail-oriented marketing professional,
+                or someone passionate about performance marketing, I'd love to connect.
             </p>
-
         </div>
 
-    </div>
+        <div class="row g-4 align-items-stretch">
 
-</footer>
+            <div class="col-lg-5">
+                <div class="contact-card h-100">
+                    <h3>Contact Information</h3>
+
+                    <div class="contact-item">
+                        <strong>📍 Location</strong><br>
+                        Manila, Philippines
+                    </div>
+
+                    <div class="contact-item">
+                        <strong>📧 Email</strong><br>
+                        <a href="mailto:aleliedelmonte0824@gmail.com">
+                            aleliedelmonte0824@gmail.com
+                        </a>
+                    </div>
+
+                    <div class="contact-item">
+                        <strong>📱 Phone</strong><br>
+                        <a href="tel:+639653060862">
+                            +63 965 306 0862
+                        </a>
+                    </div>
+
+                    <div class="d-flex flex-wrap gap-3 mt-4">
+                        <a href="https://www.linkedin.com/in/alelie-del-monte-646269393/"
+                           target="_blank"
+                           class="btn btn-outline-primary">
+                            View LinkedIn
+                        </a>
+
+                        <a href="https://resume.io/r/9rG4ykH4T"
+                           target="_blank"
+                           class="btn btn-primary">
+                            Download Resume
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-7">
+                <div class="contact-card h-100 d-flex flex-column justify-content-center">
+                    <h3>Let's Connect</h3>
+
+                    <p>
+                        I'm currently open to freelance projects, remote opportunities, and collaborations.
+                    </p>
+
+                    <p>
+                        If you're looking for someone who combines analytical thinking with Meta Ads strategy,
+                        I'd be happy to discuss how I can help.
+                    </p>
+
+                    <div class="mt-4">
+                        <a href="mailto:aleliedelmonte0824@gmail.com"
+                           class="btn btn-primary btn-lg">
+                            Send Me an Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ========================= --> <!-- TOOLS SECTION --> <!-- ========================= --> <section id="tools" class="section-light"> <div class="container"> <div class="section-title text-center"> <span>TOOLS & PLATFORMS</span> <h2>Tools I Use</h2> <p> I'm continuously building my skills using industry-standard tools for Meta Ads campaign management, analytics, reporting, and creative collaboration. </p> </div> <div class="row g-4"> <div class="col-md-6 col-lg-3"> <div class="tool-card"> <i class="bi bi-facebook"></i> <h5>Meta Ads Manager</h5> <p>Campaign creation and optimization</p> </div> </div> <div class="col-md-6 col-lg-3"> <div class="tool-card"> <i class="bi bi-graph-up"></i> <h5>Google Analytics 4</h5> <p>Website analytics and tracking</p> </div> </div> <div class="col-md-6 col-lg-3"> <div class="tool-card"> <i class="bi bi-bar-chart"></i> <h5>Looker Studio</h5> <p>Performance dashboards and reports</p> </div> </div> <div class="col-md-6 col-lg-3"> <div class="tool-card"> <i class="bi bi-palette"></i> <h5>Canva</h5> <p>Creative design and ad visuals</p> </div> </div> <div class="col-md-6 col-lg-3"> <div class="tool-card"> <i class="bi bi-table"></i> <h5>Google Sheets</h5> <p>Campaign tracking and reporting</p> </div> </div> <div class="col-md-6 col-lg-3"> <div class="tool-card"> <i class="bi bi-chat-dots"></i> <h5>Slack</h5> <p>Team communication and collaboration</p> </div> </div> <div class="col-md-6 col-lg-3"> <div class="tool-card"> <i class="bi bi-robot"></i> <h5>ChatGPT</h5> <p>Research, planning, and copy support</p> </div> </div> <div class="col-md-6 col-lg-3"> <div class="tool-card"> <i class="bi bi-code-slash"></i> <h5>VS Code</h5> <p>Portfolio development and editing</p> </div> </div> </div> </div> </section> <!-- ========================= --> <!-- PROCESS SECTION --> <!-- ========================= --> <section id="process"> <div class="container"> <div class="section-title text-center"> <span>MY PROCESS</span> <h2>How I Approach Every Campaign</h2> <p> A simple and structured process helps ensure that every campaign is built with clear goals, accurate targeting, and continuous optimization. </p> </div> <div class="row g-4"> <div class="col-md-6 col-lg-3"> <div class="process-card"> <div class="process-number">1</div> <h4>Research</h4> <p> Understand the business goals, audience, competitors, and desired campaign outcomes. </p> </div> </div> <div class="col-md-6 col-lg-3"> <div class="process-card"> <div class="process-number">2</div> <h4>Campaign Setup</h4> <p> Build campaign structures, audiences, budgets, and Meta Instant Forms with proper tracking. </p> </div> </div> <div class="col-md-6 col-lg-3"> <div class="process-card"> <div class="process-number">3</div> <h4>Optimization</h4> <p> Monitor CTR, CPC, CPM, and CPL to identify opportunities for continuous improvement. </p> </div> </div> <div class="col-md-6 col-lg-3"> <div class="process-card"> <div class="process-number">4</div> <h4>Reporting</h4> <p> Summarize campaign performance with clear insights and actionable recommendations. </p> </div> </div> </div> </div> </section> <!-- ========================= --> <!-- CONTACT SECTION --> <!-- ========================= --> <section id="contact" class="section-light"> <div class="container"> <div class="section-title text-center"> <span>GET IN TOUCH</span> <h2>Let's Grow Your Business Together</h2> <p> Whether you're looking for a Meta Ads Strategist, a detail-oriented marketing professional, or someone passionate about performance marketing, I'd love to connect. </p> </div> <div class="row g-5 align-items-center"> <div class="col-lg-6"> <div class="contact-card"> <h3 class="mb-4">Contact Information</h3> <div class="contact-item"> <h5>📍 Location</h5> <p>Manila, Philippines</p> </div> <div class="contact-item"> <h5>📧 Email</h5> <p> <a href="mailto:a       leliedelmonte0824@gmail.com"> aleliedelmonte0824@gmail.com </a> </p> </div> <div class="contact-item"> <h5>📱 Phone</h5> <p> <a href="tel:+639653060862"> +63 965 306 0862 </a> </p> </div> <div class="d-flex flex-wrap gap-3 mt-4"> <a href="https://www.linkedin.com/in/alelie-del-monte-646269393/" target="_blank" class="btn btn-outline-primary"> View LinkedIn </a> <a href="https://resume.io/r/9rG4ykH4T" target="_blank" class="btn btn-primary"> Download Resume </a> </div> </div> </div> <div class="col-lg-6"> <div class="contact-box"> <h3 class="mb-4">Let's Connect</h3> <p> I'm currently open to freelance projects, remote opportunities, and collaborations. </p> <p> If you're looking for someone who combines analytical thinking with Meta Ads strategy, I'd be happy to discuss how I can help. </p> <a href="mailto:aleliedelmonte0824@gmail.com" class="btn btn-primary btn-lg mt-3"> Send Me an Email </a> </div> </div> </div> </div> </section> <!-- ========================= --> <!-- FOOTER --> <!-- ========================= --> <footer class="footer"> <div class="container text-center"> <h4>Alelie Del Monte</h4> <p class="mb-3"> Meta Ads Strategist • Helping businesses grow through data-driven advertising. </p> <div class="d-flex justify-content-center gap-4 flex-wrap mb-3"> <a href="https://www.linkedin.com/in/alelie-del-monte-646269393/" target="_blank"> LinkedIn </a> <a href="https://resume.io/r/9rG4ykH4T" target="_blank"> Resume </a> <a href="mailto:aleliedelmonte0824@gmail.com"> Email </a> </div> <p class="small mb-0"> © 2026 Alelie Del Monte. All Rights Reserved. </p> </div> </footer>
+</section>
+ 
+<!-- FLOATING CONTACT BUTTON -->
+<a href="mailto:aleliedelmonte0824@gmail.com" class="floating-contact">
+    💬 Let’s Connect
+</a>
