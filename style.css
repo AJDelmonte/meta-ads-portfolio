@@ -719,7 +719,6 @@ html {
 
 .footer-socials {
     display: flex;
-    justify-content: center;
     justify-content: flex-end;
     gap: 14px;
 }
