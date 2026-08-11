@@ -877,3 +877,13 @@ html {
     color: #64748B;
     line-height: 1.7;
 }
+/* ===================================
+   CERTIFICATE SECTION
+=================================== */
+.certificate-preview {
+    max-height: 420px;
+    width: 100%;
+    object-fit: contain;
+    background: #F8FAFC;
+    padding: 10px;
+}
